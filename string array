@@ -1,0 +1,9 @@
+const stringArray = ["hello world", "programming is fun", "love you"];
+
+const convertToTitleCase = str => str.replace(/\b\w/g, match => match.toUpperCase());
+
+const convertArrayToTitleCase = array => array.map(convertToTitleCase);
+
+const titleCaseArray = convertArrayToTitleCase(stringArray);
+
+console.log(titleCaseArray);

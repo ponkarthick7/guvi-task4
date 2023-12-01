@@ -1,0 +1,6 @@
+const arrayWithDuplicates = [1, 2, 3, 4, 2, 5, 6, 1];
+
+const uniqueArray = [...new Set(arrayWithDuplicates)];
+
+console.log("Array with duplicates:", arrayWithDuplicates);
+console.log("Array without duplicates:", uniqueArray);

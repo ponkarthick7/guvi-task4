@@ -1,0 +1,7 @@
+const numbers = [1, 2, 3, 4, 5];
+
+const calculateSum = array => array.reduce((accumulator, currentValue) => accumulator + currentValue, 0);
+
+const sum = calculateSum(numbers);
+
+console.log("Sum:", sum);

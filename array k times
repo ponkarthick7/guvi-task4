@@ -1,0 +1,16 @@
+function rotateArray(arr, k) {
+  const n = arr.length;
+  const rotations = k % n;
+  
+    const rotatedArray = arr.slice(rotations).concat(arr.slice(0, rotations));
+
+  return rotatedArray;
+}
+
+const originalArray = [1, 2, 3, 4, 5];
+const rotations = 2;
+
+const rotatedArray = rotateArray(originalArray, rotations);
+
+console.log("Original Array:", originalArray);
+console.log(`Rotated Array by ${rotations} times:`, rotatedArray);

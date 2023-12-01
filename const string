@@ -1,0 +1,11 @@
+const strings = ["level", "hello", "radar", "world", "deified"];
+
+const isPalindrome = str => {
+  const reversedStr = str.split("").reverse().join("");
+  return str === reversedStr;
+};
+const getPalindromes = array => array.filter(string => isPalindrome(string));
+
+const palindromeStrings = getPalindromes(strings);
+
+console.log("Palindromes:", palindromeStrings);
